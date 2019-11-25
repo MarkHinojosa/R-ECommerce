@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Header } from "../components";
-import { Grid } from "@material-ui/core";
+import { Grid, TextField } from "@material-ui/core";
 
 export default class MainScreen extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Grid style={{ justifyContent: "center" }} spacing={12} container>
+      <Grid container spacing={12}>
+        <Grid item xs={12}>
           <Header />
         </Grid>
-      </React.Fragment>
+      </Grid>
     );
   }
 }
