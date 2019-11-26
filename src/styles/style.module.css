@@ -1,0 +1,15 @@
+body {
+  margin: 0px;
+}
+.textField {
+  background-color: aliceblue;
+}
+img {
+  height: "100px";
+}
+.logoContainer {
+  display: "flex";
+  background-color: "green";
+  justify-content: "center";
+  flex-direction: "row";
+}
