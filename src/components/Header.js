@@ -7,10 +7,12 @@ import {
   PriceMatchLogo
 } from "../assets/index";
 
+import styles from "../styles/style.module.css";
+
 export default class Header extends Component {
   render() {
     return (
-      <Grid container style={{ backgroundColor: "#141210" }} spacing={10}>
+      <Grid container style={{ backgroundColor: "#141210" }} spacing={12}>
         <Grid item xs={2}>
           <img style={{ width: "100%", height: "100%" }} src={Logo} />
           <div
@@ -40,7 +42,7 @@ export default class Header extends Component {
                 fontSize: "12px",
                 width: "50%",
                 display: "flex",
-                padding: "5%",
+                // padding: "5%",
                 flexDirection: "row",
                 justifyContent: "space-around"
               }}
@@ -52,6 +54,7 @@ export default class Header extends Component {
             </div>
             <form noValidate autoComplete="off">
               <TextField
+                style={{ backgroundColor: "white" }}
                 fullWidth
                 className="textField"
                 id="Search"
@@ -60,19 +63,45 @@ export default class Header extends Component {
             </form>
           </div>
         </Grid>
-        <Grid item xs={5}>
-          <div style={{ flexDirection: "column", display: "flex" }}>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row"
-              }}
-            >
-              {" "}
-              <img className="logo" src={FreeShippingLogo} />
-              <img className="logo" src={ReturnLogo} />
-              <img className="logo" src={PriceMatchLogo} />
-            </div>
+        <Grid
+          style={{
+            display: "flex",
+            flexDirection: "column"
+          }}
+          item
+          xs={5}
+        >
+          {" "}
+          <div
+            style={{
+              flexDirection: "row",
+              display: "flex",
+              justifyContent: "space-around"
+            }}
+          >
+            <p style={{ color: "white" }}>Login/Sign Up</p>
+            <p style={{ color: "white" }}>Login/Sign Up</p>
+            <p style={{ color: "white" }}>Login/Sign Up</p>
+            <p style={{ color: "white" }}>Login/Sign Up</p>
+          </div>
+          <div>
+            <img
+              alt="freeShippingLogo"
+              className="mogo"
+              style={{ width: "33%" }}
+              src={FreeShippingLogo}
+            />
+            <img
+              alt="returnLogo"
+              style={{ width: "33%" }}
+              className="mogo"
+              src={ReturnLogo}
+            />
+            <img
+              alt="priceMatchLogo"
+              style={{ width: "33%" }}
+              src={PriceMatchLogo}
+            />
           </div>
         </Grid>
       </Grid>
