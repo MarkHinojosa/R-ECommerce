@@ -13,3 +13,6 @@ img {
   justify-content: "center";
   flex-direction: "row";
 }
+.box {
+  color: "white";
+}
