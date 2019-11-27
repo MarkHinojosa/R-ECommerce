@@ -7,7 +7,8 @@ import {
   PriceMatchLogo
 } from "../assets/index";
 
-import styles from "../styles/style.module.css";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+// import styles from "../styles/style.module.css";
 
 export default class Header extends Component {
   render() {
@@ -36,15 +37,21 @@ export default class Header extends Component {
           </div>
         </Grid>{" "}
         <Grid item xs={5}>
-          <div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column"
+            }}
+          >
             <div
               style={{
+                // padding: "10px",
                 fontSize: "12px",
                 width: "50%",
                 display: "flex",
-                // padding: "5%",
+                padding: "5%",
                 flexDirection: "row",
-                justifyContent: "space-around"
+                justifyContent: "space-evenly"
               }}
             >
               {" "}
@@ -72,17 +79,18 @@ export default class Header extends Component {
           xs={5}
         >
           {" "}
-          <div
-            style={{
-              flexDirection: "row",
-              display: "flex",
-              justifyContent: "space-around"
-            }}
-          >
-            <p style={{ color: "white" }}>Login/Sign Up</p>
-            <p style={{ color: "white" }}>Login/Sign Up</p>
-            <p style={{ color: "white" }}>Login/Sign Up</p>
-            <p style={{ color: "white" }}>Login/Sign Up</p>
+          <div style={styles.accountLinksContainer}>
+            <p style={styles.accountLinkText}>Login/Signup </p>
+            <p style={styles.accountLinkText}>My Garage </p>
+            <p style={styles.accountLinkText}>ZillaCash $0 </p>
+            <div style={{ display: "flex", justifyContent: "row" }}>
+              <ShoppingCartIcon
+                style={{ alignSelf: "center" }}
+                color="secondary"
+                fontSize="large"
+              />
+              <p style={styles.accountLinkText}>CART</p>
+            </div>
           </div>
           <div>
             <img
@@ -108,3 +116,13 @@ export default class Header extends Component {
     );
   }
 }
+
+const styles = {
+  accountLinksContainer: {
+    display: "flex",
+    justifyContent: "space-around"
+  },
+  accountLinkText: {
+    color: "white"
+  }
+};
