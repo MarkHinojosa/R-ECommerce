@@ -14,22 +14,35 @@ export default class Header extends Component {
   render() {
     return (
       <Grid container style={{ backgroundColor: "#141210" }} spacing={12}>
-        <Grid item xs={2}>
-          <img style={{ width: "100%", height: "100%" }} src={Logo} />
+        <Grid
+          style={{
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            padding: "10px"
+          }}
+          item
+          xs={3}
+        >
+          <img
+            alt="Logo"
+            style={{ width: "238px", height: "85px", alignSelf: "center" }}
+            src={Logo}
+          />
           <div
             style={{
               width: "100%",
+              height: "20%",
               justifyContent: "center",
-              color: "white",
               textAlign: "center",
               alignSelf: "center"
             }}
           >
             <p
               style={{
-                color: "white",
+                color: "purple",
                 fontWeight: "bold",
-                fontSize: "12px"
+                fontSize: "12"
               }}
             >
               Speak To An Expert: 1-555-555{" "}
@@ -76,7 +89,7 @@ export default class Header extends Component {
             flexDirection: "column"
           }}
           item
-          xs={5}
+          xs={4}
         >
           {" "}
           <div style={styles.accountLinksContainer}>
@@ -92,24 +105,37 @@ export default class Header extends Component {
               <p style={styles.accountLinkText}>CART</p>
             </div>
           </div>
-          <div>
-            <img
-              alt="freeShippingLogo"
-              className="mogo"
-              style={{ width: "33%" }}
-              src={FreeShippingLogo}
-            />
-            <img
-              alt="returnLogo"
-              style={{ width: "33%" }}
-              className="mogo"
-              src={ReturnLogo}
-            />
-            <img
-              alt="priceMatchLogo"
-              style={{ width: "33%" }}
-              src={PriceMatchLogo}
-            />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "no-wrap"
+            }}
+          >
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <img
+                alt="freeShippingLogo"
+                className="mogo"
+                style={{ width: "60%" }}
+                src={FreeShippingLogo}
+              />
+            </div>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              {" "}
+              <img
+                alt="returnLogo"
+                style={{ width: "60%" }}
+                className="mogo"
+                src={ReturnLogo}
+              />
+            </div>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <img
+                alt="priceMatchLogo"
+                style={{ width: "60%" }}
+                src={PriceMatchLogo}
+              />
+            </div>
           </div>
         </Grid>
       </Grid>
