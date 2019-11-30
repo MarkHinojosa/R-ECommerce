@@ -22,8 +22,11 @@ export default class CategoriesBar extends Component {
         </Grid>
         <Grid item xs={4}>
           <Grid style={{ height: "100%" }} container spacing={12}>
-            <Grid style={{ height: "100%" }} item xs={4}>
-              <div style={styles.shopHolidayContainer}>SHOP HOLIDAY</div>
+            <Grid style={styles.shopHolidayContainer} item xs={4}>
+              <text style={styles.shopHolidayText}>SHOP HOLIDAY</text>
+            </Grid>
+            <Grid style={styles.magazineContainer} item xs={4}>
+              <text style={styles.magazineText}>MAGAZINE</text>
             </Grid>
           </Grid>
         </Grid>
@@ -44,8 +47,36 @@ const styles = {
     fontSize: "13px",
     color: "white"
   },
+  shopHolidayText: {
+    justifyContent: "center",
+    display: "flex",
+    alignSelf: "center",
+    flexDirection: "center",
+    color: "white"
+  },
   shopHolidayContainer: {
-    backgroundColor: "#6ad8ca",
-    height: "100%"
+    fontWeight: "bold",
+    height: "100%",
+    alignContent: "center",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "center",
+    backgroundColor: "#6ad8ca"
+  },
+  magazineContainer: {
+    fontWeight: "bold",
+    height: "100%",
+    alignContent: "center",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "center",
+    backgroundColor: "#d34004"
+  },
+  magazineText: {
+    fontWeight: "bold",
+    color: "white",
+    alignSelf: "center",
+    display: "flex",
+    justifyContent: "center"
   }
 };
