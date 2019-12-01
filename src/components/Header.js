@@ -18,17 +18,16 @@ export default class Header extends Component {
           style={{
             height: "100%",
             display: "flex",
-            flexDirection: "column",
-            padding: "10px"
+            flexDirection: "column"
           }}
           item
           xs={3}
         >
-          <img
-            alt="Logo"
-            style={{ width: "238px", height: "85px", alignSelf: "center" }}
-            src={Logo}
-          />
+          <Grid container spacing={12}>
+            <Grid item xs={12}>
+              <img alt="Logo" style={styles.mainLogo} src={Logo} />
+            </Grid>
+          </Grid>
           <div
             style={{
               width: "100%",
@@ -150,5 +149,10 @@ const styles = {
   },
   accountLinkText: {
     color: "white"
+  },
+  mainLogo: {
+    width: "100%",
+    height: "100%",
+    alignSelf: "center"
   }
 };
