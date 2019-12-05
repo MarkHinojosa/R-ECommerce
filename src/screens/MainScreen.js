@@ -1,18 +1,27 @@
 import React, { Component } from "react";
 import { Header, CategoriesBar } from "../components";
 import { Grid } from "@material-ui/core";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../redux/actions";
 
-export default class MainScreen extends Component {
-  render() {
-    return (
-      <Grid container spacing={12}>
-        <Grid item xs={12}>
-          <Header />
-          <CategoriesBar />
-          <p>Boots</p>
-          <button>add to cart</button>
-        </Grid>
+const MainScreen = () => {
+  const dispatch = useDispatch();
+
+  return (
+    <Grid container spacing={12}>
+      <Grid item xs={12}>
+        <Header />
+        <CategoriesBar />
+        <p>Boots</p>
+        <button onClick={() => dispatch(addToCart("boots"))}>
+          add to cart
+        </button>
+        <p>Helmet</p>
+        <button onClick={() => dispatch(addToCart("helmet"))}>
+          add to cart
+        </button>
       </Grid>
-    );
-  }
-}
+    </Grid>
+  );
+};
+export default MainScreen;
