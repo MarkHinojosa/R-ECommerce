@@ -9,6 +9,8 @@ export default class MainScreen extends Component {
         <Grid item xs={12}>
           <Header />
           <CategoriesBar />
+          <p>Boots</p>
+          <button>add to cart</button>
         </Grid>
       </Grid>
     );
