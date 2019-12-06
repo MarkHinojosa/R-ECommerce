@@ -4,9 +4,15 @@ export default class CategoriesBar extends Component {
   render() {
     return (
       <Grid style={styles.catBarContainer} container spacing={12}>
-        <Grid item xs={8}>
+        <Grid item xs={8} style={{ display: "flex", alignItems: "center" }}>
           <ul
-            style={{ listStyle: "none", display: "flex", flexDirection: "row" }}
+            style={{
+              listStyle: "none",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-around",
+              width: "100%"
+            }}
           >
             <li style={styles.listItem}>HELMETS</li>
             <li style={styles.listItem}>RIDING GEAR</li>
