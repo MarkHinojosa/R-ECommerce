@@ -9,7 +9,6 @@ const App = () => {
   return (
     <div>
       <MainScreen />
-      {/* cart: {cart} */}
     </div>
   );
 };

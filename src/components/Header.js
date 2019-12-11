@@ -41,7 +41,7 @@ const Header = () => {
         >
           <p
             style={{
-              color: "purple",
+              color: "white",
               fontWeight: "bold",
               fontSize: "12"
             }}
