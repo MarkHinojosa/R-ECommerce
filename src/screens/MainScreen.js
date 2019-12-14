@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Header, CategoriesBar } from "../components";
+import { Header, CategoriesBar, Carousel } from "../components";
 import { Grid } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../redux/actions";
@@ -12,6 +12,7 @@ const MainScreen = () => {
       <Grid item xs={12}>
         <Header />
         <CategoriesBar />
+        <Carousel />
         <p>Boots</p>
         <button onClick={() => dispatch(addToCart("boots"))}>
           add to cart
