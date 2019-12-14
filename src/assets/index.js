@@ -3,3 +3,4 @@ export { default as FreeShippingLogo } from "./freeShippingLogo.svg";
 export { default as PriceMatchLogo } from "./priceMatchLogo.svg";
 export { default as ReturnLogo } from "./returnLogo.svg";
 export { default as WhiteShoppingCartLogo } from "./whiteShoppingCart.png";
+export { default as CardoPhoto } from "./cardoPhoto.jpg";
