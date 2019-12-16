@@ -1,17 +1,76 @@
 import React, { Component } from "react";
-import { Grid } from "@material-ui/core";
-import { CardoPhoto } from "../assets/index";
+import { Grid, Button } from "@material-ui/core";
+import {
+  CardoPhoto,
+  HelmetsPhoto,
+  JacketPhoto,
+  LeatherJacketPhoto,
+  ThisWeekPhoto
+} from "../assets/index";
+
+let photoArray = [
+  CardoPhoto,
+  HelmetsPhoto,
+  JacketPhoto,
+  LeatherJacketPhoto,
+  ThisWeekPhoto
+];
 
 class Carousel extends React.Component {
   state = {
-    displayImage: 0
+    displayImageIndex: 1
+  };
+
+  _onLeftArrowCLick = () => {
+    let photoArrayLength = photoArray.length;
+    if (this.state.displayImageIndex > 0) {
+      let subtractToIndex = this.state.displayImageIndex - 1;
+      this.setState({
+        displayImageIndex: subtractToIndex
+      });
+    } else {
+      this.setState({
+        displayImageIndex: photoArrayLength - 1
+      });
+    }
+  };
+
+  _onRightArrowClick = () => {
+    let addToIndex = this.state.displayImageIndex + 1;
+    this.setState({
+      displayImageIndex: addToIndex
+    });
   };
 
   render() {
+    let { displayImageIndex } = this.state;
     return (
-      <Grid container spacing={12}>
+      <Grid container spacing={12} style={{ height: "100%" }}>
         <Grid itemxs={12} style={styles.carouselContainer}>
-          <img src={CardoPhoto} style={{ width: "100%" }} />
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              backgroundImage: `url(${photoArray[displayImageIndex]})`
+            }}
+          >
+            <Button
+              style={styles.changeCarouselImageButton}
+              onClick={() => this._onLeftArrowCLick()}
+            >{`<`}</Button>
+            <Button
+              style={styles.changeCarouselImageButton}
+              onClick={() => this._onRightArrowClick()}
+            >
+              {" "}
+              >{" "}
+            </Button>
+          </div>
+          {/* <img src={this.state.displayImage} style={{ width: "100%" }} /> */}
         </Grid>{" "}
       </Grid>
     );
@@ -20,9 +79,15 @@ class Carousel extends React.Component {
 
 const styles = {
   carouselContainer: {
-    backgroundColor: "blue",
-    height: "10%",
+    backgroundColor: "silver",
+    height: "100%",
     width: "100%"
+  },
+  changeCarouselImageButton: {
+    height: "100%",
+    width: "15%",
+    backgroundColor: "rgba(0,0,0,.5)",
+    color: "white"
   }
 };
 export default Carousel;

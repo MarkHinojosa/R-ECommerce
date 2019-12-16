@@ -44,9 +44,9 @@ export default class CategoriesBar extends Component {
 const styles = {
   catBarContainer: {
     // display: "grid",
-    backgroundColor: "#FA4C17",
+    backgroundColor: "#FA4C17"
     // width: "100%",
-    height: "25%"
+    // height: "25%"
   },
   listItem: {
     margin: "5px",
