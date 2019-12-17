@@ -7,6 +7,8 @@ import {
   LeatherJacketPhoto,
   ThisWeekPhoto
 } from "../assets/index";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
 let photoArray = [
   CardoPhoto,
@@ -61,16 +63,16 @@ class Carousel extends React.Component {
             <Button
               style={styles.changeCarouselImageButton}
               onClick={() => this._onLeftArrowCLick()}
-            >{`<`}</Button>
+            >
+              <ArrowBackIosIcon />
+            </Button>
             <Button
               style={styles.changeCarouselImageButton}
               onClick={() => this._onRightArrowClick()}
             >
-              {" "}
-              >{" "}
+              <ArrowForwardIosIcon />
             </Button>
           </div>
-          {/* <img src={this.state.displayImage} style={{ width: "100%" }} /> */}
         </Grid>{" "}
       </Grid>
     );
