@@ -57,7 +57,8 @@ class Carousel extends React.Component {
               flexDirection: "row",
               justifyContent: "space-between",
               alignItems: "center",
-              backgroundImage: `url(${photoArray[displayImageIndex]})`
+              backgroundImage: `url(${photoArray[displayImageIndex]})`,
+              backgroundSize: "contain"
             }}
           >
             <Button

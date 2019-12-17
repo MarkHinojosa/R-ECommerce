@@ -13,14 +13,6 @@ const MainScreen = () => {
         <Header />
         <CategoriesBar />
         <Carousel />
-        <p>Boots</p>
-        <button onClick={() => dispatch(addToCart("boots"))}>
-          add to cart
-        </button>
-        <p>Helmet</p>
-        <button onClick={() => dispatch(addToCart("helmet"))}>
-          add to cart
-        </button>
       </Grid>
     </Grid>
   );
