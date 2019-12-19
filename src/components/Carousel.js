@@ -48,7 +48,7 @@ class Carousel extends React.Component {
     let { displayImageIndex } = this.state;
     return (
       <Grid container spacing={12} style={{ height: "100%" }}>
-        <Grid itemxs={12} style={styles.carouselContainer}>
+        <Grid item xs={12} style={styles.carouselContainer}>
           <div
             style={{
               width: "100%",

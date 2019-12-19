@@ -8,3 +8,7 @@ export { default as HelmetsPhoto } from "./helmetsPhoto.jpg";
 export { default as JacketPhoto } from "./jacketPhoto.jpg";
 export { default as LeatherJacketPhoto } from "./leatherJacketPhoto.jpg";
 export { default as ThisWeekPhoto } from "./thisWeekPhoto.jpg";
+export { default as FeaturedDeal } from "./featuredDeal.jpg";
+export { default as HelmetFeatured } from "./helmetFeatured.jpg";
+export { default as LastMinuteShopping } from "./lastMinuteShopping.jpg";
+export { default as StockingStuffers } from "./stockingStuffersFeatured.jpg";
