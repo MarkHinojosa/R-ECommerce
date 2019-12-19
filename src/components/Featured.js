@@ -3,7 +3,8 @@ import {
   FeaturedDeal,
   HelmetFeatured,
   LastMinuteShopping,
-  StockingStuffers
+  StockingStuffers,
+  WeekleyDealsFeatured
 } from "../assets/index";
 
 import React from "react";
@@ -18,11 +19,19 @@ const Featured = () => {
       <Grid item xs={4}>
         {" "}
         <img
-          src={FeaturedDeal}
+          src={WeekleyDealsFeatured}
           style={{ height: "100%", width: "100%" }}
         />{" "}
       </Grid>
-      <Grid item xs={2}></Grid>
+      <Grid item xs={8}>
+        <img src={LastMinuteShopping} />
+      </Grid>
+      <Grid item xs={4}>
+        <img src={HelmetFeatured} />
+      </Grid>
+      <Grid item xs={4}>
+        <img src={StockingStuffers} />
+      </Grid>
     </Grid>
   );
 };
