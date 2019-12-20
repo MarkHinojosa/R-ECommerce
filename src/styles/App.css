@@ -1,12 +1,12 @@
 body {
   margin: 0px;
+  width: 100vw;
+  height: 100vh;
 }
 .textField {
   background-color: aliceblue;
 }
-img {
-  height: "100px";
-}
+
 .logoContainer {
   display: "flex";
   background-color: "green";
@@ -15,4 +15,12 @@ img {
 }
 .box {
   color: "white";
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+img {
+  height: 200px;
+  width: 200px;
 }

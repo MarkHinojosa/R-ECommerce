@@ -23,8 +23,8 @@ const Featured = () => {
           style={{ height: "100%", width: "100%" }}
         />{" "}
       </Grid>
-      <Grid item xs={8}>
-        <img src={LastMinuteShopping} />
+      <Grid item xs={10}>
+        <img style={{ width: "100%" }} src={LastMinuteShopping} />
       </Grid>
       <Grid item xs={4}>
         <img src={HelmetFeatured} />

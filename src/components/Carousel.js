@@ -83,7 +83,7 @@ class Carousel extends React.Component {
 const styles = {
   carouselContainer: {
     backgroundColor: "silver",
-    height: "100%",
+    height: "40vh",
     width: "100%"
   },
   changeCarouselImageButton: {
