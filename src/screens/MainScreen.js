@@ -17,8 +17,8 @@ const MainScreen = () => {
       <div style={styles.div2}>
         <Carousel />
       </div>
-
-      <div style={styles.div3}>
+      <div style={{ width: "100%", display: "flex" }}>
+        {" "}
         <Featured />
       </div>
 
@@ -38,18 +38,12 @@ const styles = {
   gridContainer: {
     width: "100%",
     height: "100%",
-    display: "grid",
-    gridTemplateColumns: 'repeat("1fr")',
-    gridTemplateRows: 'repeat("1fr")',
     overflow: "scroll"
   },
   div1: {
-    gridColumn: " 1 / 13",
     backgroundColor: "red"
   },
   div2: {
-    gridColumn: " 1 / 13",
-    gridRow: "2 / 4",
     backgroundColor: "blue"
   },
   div3: {

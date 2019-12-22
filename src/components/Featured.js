@@ -12,57 +12,43 @@ import React from "react";
 const Featured = () => {
   return (
     <div style={styles.featuredContainer}>
-      <div style={{ flexDirection: "row", justifyContent: "space-around" }}>
-        <div
-          style={{
-            height: "300px",
-            width: "300px",
-            backgroundImage: `url(${FeaturedDeal})`,
-            backgroundRepeat: "none",
-            backgroundSize: "cover"
-          }}
-        ></div>
-        <div style={{ backgroundImage: `url(${WeekleyDealsFeatured})` }}></div>
-        {/* <img src={FeaturedDeal} style={{ height: "100%", width: "40%" }} />{" "} */}
-        {/* <img
-          src={WeekleyDealsFeatured}
-          style={{ height: "100%", width: "40%" }}
-        /> */}
+      <div style={styles.dealsRow}>
+        <div style={{ width: "100%", display: "flex" }}>
+          <img
+            src={FeaturedDeal}
+            style={{ objectFit: "contain", height: "100%", width: "100%" }}
+          />{" "}
+        </div>
+        <div style={{ width: "100%", display: "flex" }}>
+          {" "}
+          <img
+            src={WeekleyDealsFeatured}
+            style={{ objectFit: "contain", height: "100%", width: "100%" }}
+          />
+        </div>
       </div>
     </div>
-
-    // <Grid container spacing={2}>
-    //   <Grid item xs={2}></Grid>
-    //   <Grid item xs={4}>
-    //     <img src={FeaturedDeal} style={{ height: "100%", width: "100%" }} />{" "}
-    //   </Grid>
-    //   <Grid item xs={4}>
-    //     {" "}
-    //     <img
-    //       src={WeekleyDealsFeatured}
-    //       style={{ height: "100%", width: "100%" }}
-    //     />{" "}
-    //   </Grid>
-    //   <Grid item xs={10}>
-    //     <img style={{ width: "100%" }} src={LastMinuteShopping} />
-    //   </Grid>
-    //   <Grid item xs={4}>
-    //     <img src={HelmetFeatured} />
-    //   </Grid>
-    //   <Grid item xs={4}>
-    //     <img src={StockingStuffers} />
-    //   </Grid>
-    // </Grid>
   );
 };
 const styles = {
   featuredContainer: {
     display: "flex",
-    justifyContent: "column",
+    justifyContent: "center",
     flex: 1,
     width: "100%",
     height: "100%",
-    backgroundColor: "red"
+    backgroundColor: "green",
+    alignContent: "center"
+  },
+  dealsRow: {
+    height: "30vh",
+    width: "70%",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignContent: "center",
+    marginTop: "5%",
+    alignSelf: "center"
   }
 };
 
