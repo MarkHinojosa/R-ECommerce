@@ -13,27 +13,26 @@ const Featured = () => {
   return (
     <div style={styles.featuredContainer}>
       <div style={styles.dealsRow}>
-        <div style={{ width: "100%", display: "flex" }}>
+        <div style={{ width: "100%", display: "flex", paddingRight: "1%" }}>
           <img
             src={FeaturedDeal}
             style={{
               objectFit: "contain",
               height: "100%",
               width: "100%",
-              paddingRight: "5px",
+
               alignSelf: "center"
             }}
           />{" "}
         </div>
-        <div style={{ width: "100%", display: "flex" }}>
+        <div style={{ width: "100%", display: "flex", paddingLeft: "1%" }}>
           {" "}
           <img
             src={WeekleyDealsFeatured}
             style={{
               objectFit: "contain",
               height: "100%",
-              width: "100%",
-              paddingLeft: "5px"
+              width: "100%"
             }}
           />
         </div>
@@ -42,7 +41,7 @@ const Featured = () => {
         <img style={{ width: "100%" }} src={LastMinuteShopping} />
       </div>
       <div style={styles.dealsRow}>
-        <div style={{ width: "100%", display: "flex" }}>
+        <div style={{ width: "100%", display: "flex", paddingRight: "1%" }}>
           <img
             style={{
               objectFit: "contain",
@@ -54,7 +53,7 @@ const Featured = () => {
             src={HelmetFeatured}
           />
         </div>
-        <div style={{ width: "100%", display: "flex" }}>
+        <div style={{ width: "100%", display: "flex", paddingLeft: "1%" }}>
           <img
             style={{
               objectFit: "contain",
@@ -90,7 +89,7 @@ const styles = {
     flexDirection: "row",
     // justifyContent: "space-around",
     alignContent: "center",
-    marginTop: "5%",
+    marginTop: "3%",
     alignSelf: "center"
   },
   bannerRow: {
@@ -99,7 +98,7 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     alignContent: "center",
-    marginTop: "5%",
+    marginTop: "3%",
     alignSelf: "center",
     alignItems: "center"
   }
