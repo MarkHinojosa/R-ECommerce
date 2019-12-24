@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { Header, CategoriesBar, Carousel, Featured } from "../components";
+import {
+  Header,
+  CategoriesBar,
+  Carousel,
+  Featured,
+  PartSearch
+} from "../components";
 import { Grid } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../redux/actions";
@@ -20,6 +26,10 @@ const MainScreen = () => {
       <div style={{ width: "100%", display: "flex" }}>
         {" "}
         <Featured />
+      </div>
+      <div style={{ width: "100%", display: "flex" }}>
+        {" "}
+        <PartSearch />
       </div>
 
       {/* <Grid container spacing={12}>
