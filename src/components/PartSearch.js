@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Button } from "@material-ui/core";
 const PartSearch = () => {
   return (
     <div style={styles.partSearchRowContainer}>
@@ -22,7 +22,13 @@ const PartSearch = () => {
             </div>
           </div>
           <div style={styles.dropdownsContainer}>
-            <div style={styles.dropdownsRow}></div>
+            <div style={styles.dropdownsRow}>
+              <div>type</div>
+              <div>year</div>
+              <div>make</div>
+              <div>model</div>
+              <Button variant="contained">GO!</Button>
+            </div>
           </div>
         </div>
       </div>
@@ -89,8 +95,9 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     width: "100%",
-    height: "10px",
-    backgroundColor: "blue"
+    // height: "100%",
+    backgroundColor: "blue",
+    justifyContent: "space-around"
   }
 };
 
