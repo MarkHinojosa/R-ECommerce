@@ -21,6 +21,9 @@ const PartSearch = () => {
               <div>OEM Parts</div>
             </div>
           </div>
+          <div style={styles.dropdownsContainer}>
+            <div style={styles.dropdownsRow}></div>
+          </div>
         </div>
       </div>
     </div>
@@ -72,6 +75,22 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     display: "flex"
+  },
+  dropdownsContainer: {
+    width: "100%",
+    height: "100%",
+    backgroundColor: "red",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column"
+  },
+  dropdownsRow: {
+    display: "flex",
+    flexDirection: "row",
+    width: "100%",
+    height: "10px",
+    backgroundColor: "blue"
   }
 };
 
