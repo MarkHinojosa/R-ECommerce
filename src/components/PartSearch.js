@@ -74,9 +74,8 @@ const PartSearch = () => {
                   }}
                 >
                   <option value="" />
-                  <option value={10}>Ten</option>
-                  <option value={20}>Twenty</option>
-                  <option value={30}>Thirty</option>
+                  <option value={"street"}>Street</option>
+                  <option value={"dirt"}>Dirt</option>
                 </Select>
               </FormControl>
 
@@ -98,9 +97,12 @@ const PartSearch = () => {
                   }}
                 >
                   <option value="" />
-                  <option value={10}>Ten</option>
-                  <option value={20}>Twenty</option>
-                  <option value={30}>Thirty</option>
+                  <option value={2015}>2015</option>
+                  <option value={2016}>2016</option>
+                  <option value={2017}>2017</option>
+                  <option value={2018}>2018</option>
+                  <option value={2019}>2019</option>
+                  <option value={2020}>2020</option>
                 </Select>
               </FormControl>
 
@@ -122,9 +124,10 @@ const PartSearch = () => {
                   }}
                 >
                   <option value="" />
-                  <option value={10}>Ten</option>
-                  <option value={20}>Twenty</option>
-                  <option value={30}>Thirty</option>
+                  <option value={"kawasaki"}>kawasaki</option>
+                  <option value={"honda"}>honda</option>
+                  <option value={"yamaha"}>yamaha</option>
+                  <option value={"ktm"}>ktm</option>
                 </Select>
               </FormControl>
 
