@@ -31,15 +31,7 @@ const MainScreen = () => {
         {" "}
         <PartSearch />
       </div>
-
-      {/* <Grid container spacing={12}>
-        <Grid item xs={12}>
-          <Header />
-          <CategoriesBar />
-          <Carousel />
-          <Featured />
-        </Grid>
-      </Grid> */}
+      <div style={{ width: "100%", display: "flex", height: "10px" }}></div>
     </div>
   );
 };

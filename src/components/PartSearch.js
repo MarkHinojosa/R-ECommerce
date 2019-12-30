@@ -40,6 +40,7 @@ const PartSearch = () => {
       <div style={styles.partsSeachOutterContainer}>
         <h1
           style={{
+            marginLeft: "3%",
             fontSize: "2.5em"
           }}
         >
@@ -56,7 +57,11 @@ const PartSearch = () => {
           </div>
           <div style={styles.dropdownsContainer}>
             <div style={styles.dropdownsRow}>
-              <FormControl variant="outlined" className={classes.formControl}>
+              <FormControl
+                variant="outlined"
+                className={classes.formControl}
+                style={{ width: "20%" }}
+              >
                 <InputLabel
                   ref={inputLabel}
                   htmlFor="outlined-age-native-simple"
@@ -89,7 +94,7 @@ const PartSearch = () => {
                 <Select
                   native
                   value={state.age}
-                  onChange={handleChange("age")}
+                  onChange={handleChange("year")}
                   labelWidth={labelWidth}
                   inputProps={{
                     name: "Type",
@@ -131,7 +136,11 @@ const PartSearch = () => {
                 </Select>
               </FormControl>
 
-              <FormControl variant="outlined" className={classes.formControl}>
+              <FormControl
+                variant="outlined"
+                className={classes.formControl}
+                style={{ width: "25%" }}
+              >
                 <InputLabel
                   ref={inputLabel}
                   htmlFor="outlined-age-native-simple"
@@ -141,7 +150,7 @@ const PartSearch = () => {
                 <Select
                   native
                   value={state.age}
-                  onChange={handleChange("age")}
+                  onChange={handleChange("model")}
                   labelWidth={labelWidth}
                   inputProps={{
                     name: "Type",
@@ -149,14 +158,12 @@ const PartSearch = () => {
                   }}
                 >
                   <option value="" />
-                  <option value={10}>Ten</option>
-                  <option value={20}>Twenty</option>
-                  <option value={30}>Thirty</option>
                 </Select>
               </FormControl>
               <Button variant="contained">GO!</Button>
             </div>
           </div>
+          <div>Garage Log in to Access saved bikes</div>
         </div>
       </div>
     </div>
@@ -167,27 +174,32 @@ const styles = {
   partSearchRowContainer: {
     display: "flex",
     width: "100%",
+    height: "100%",
     justifyContent: "center"
   },
   partsSeachOutterContainer: {
     alignSelf: "center",
     backgroundColor: "white",
     width: "70%",
-    height: "40vh",
+    // height: "40vh",
     marginTop: "1%",
     border: 1,
     borderColor: "#d6d7da",
     borderTop: "orange",
-    borderStyle: "solid"
+    borderStyle: "solid",
+    display: "flex",
+    flexDirection: "column",
+    paddingBottom: "30px"
   },
   partsSearchInnerContainer: {
     flex: "1",
     alignSelf: "center",
     backgroundColor: "gray",
-    width: "100%",
+    width: "95%",
     height: "50%",
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
+    padding: "1%"
   },
   partsSelectionRow: {
     height: "20%",
@@ -223,7 +235,7 @@ const styles = {
     flexDirection: "row",
     width: "100%",
     // height: "100%",
-    backgroundColor: "blue",
+    backgroundColor: "white",
     justifyContent: "space-around",
     alignItems: "center"
   }
