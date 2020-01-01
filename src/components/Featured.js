@@ -71,8 +71,6 @@ const Featured = () => {
 };
 const styles = {
   featuredContainer: {
-    borderColor: "red",
-    borderWidth: "3px",
     display: "flex",
     justifyContent: "column",
     flex: 1,

@@ -226,6 +226,9 @@ const styles = {
     height: "100%",
     backgroundColor: "red",
     display: "flex",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column"

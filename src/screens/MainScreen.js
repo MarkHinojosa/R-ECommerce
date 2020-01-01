@@ -4,7 +4,8 @@ import {
   CategoriesBar,
   Carousel,
   Featured,
-  PartSearch
+  PartSearch,
+  CategoriesImages
 } from "../components";
 import { Grid } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
@@ -31,7 +32,12 @@ const MainScreen = () => {
         {" "}
         <PartSearch />
       </div>
-      <div style={{ width: "100%", display: "flex", height: "10px" }}></div>
+      <div style={{ width: "100%", display: "flex" }}>
+        <CategoriesImages />
+      </div>
+      <div style={{ width: "100%", display: "flex" }}>
+        <CategoriesImages />
+      </div>
     </div>
   );
 };
@@ -39,8 +45,8 @@ const MainScreen = () => {
 const styles = {
   gridContainer: {
     width: "100%",
-    height: "100%",
-    overflow: "scroll"
+    height: "100%"
+    // overflow: "scroll"
   },
   div1: {
     backgroundColor: "red"
