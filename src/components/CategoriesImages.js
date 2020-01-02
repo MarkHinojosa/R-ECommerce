@@ -127,9 +127,7 @@ const CategoriesImages = () => {
               ...styles.gearGuidesImage
             }}
           >
-            <text style={{ color: "white", alignSelf: "center" }}>
-              ACCESSORIES
-            </text>
+            <text style={styles.categoryText}>ACCESSORIES</text>
           </div>
         </Card>
         <Card className={classes.card} style={styles.categoryStyling}>
@@ -139,7 +137,7 @@ const CategoriesImages = () => {
               ...styles.tiresImage
             }}
           >
-            <text style={{ color: "white", alignSelf: "center" }}>TIRES</text>
+            <text style={styles.categoryText}>TIRES</text>
           </div>
         </Card>{" "}
         <Card className={classes.card} style={styles.categoryStyling}>
@@ -149,7 +147,7 @@ const CategoriesImages = () => {
               ...styles.WomensImage
             }}
           >
-            <text style={{ color: "white", alignSelf: "center" }}>WOMEN'S</text>
+            <text style={styles.categoryText}>WOMEN'S</text>
           </div>
         </Card>
       </div>
@@ -165,6 +163,12 @@ const styles = {
     flexDirection: "column",
     justifyContent: "center",
     backgroundSize: "cover"
+  },
+  categoryText: {
+    color: "white",
+    alignSelf: "center",
+    fontWeight: "bold",
+    fontSize: "2em"
   },
   gearGuidesImage: {
     backgroundImage: `url(${CategoryGearGuides})`
