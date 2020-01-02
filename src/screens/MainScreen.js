@@ -35,9 +35,6 @@ const MainScreen = () => {
       <div style={{ width: "100%", display: "flex" }}>
         <CategoriesImages />
       </div>
-      <div style={{ width: "100%", display: "flex" }}>
-        <CategoriesImages />
-      </div>
     </div>
   );
 };
