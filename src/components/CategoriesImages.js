@@ -59,7 +59,9 @@ const CategoriesImages = () => {
           gridTemplateColumns: " 1fr 1fr",
           gridRowsColumns: " 1fr 1fr",
           gridColumnGap: "1%",
-          gridRowGap: "1%"
+          gridRowGap: "1%",
+          marginTop: "5%",
+          paddingBottom: "3%"
         }}
       >
         <Card className={classes.card} style={styles.categoryStyling}>
@@ -69,9 +71,7 @@ const CategoriesImages = () => {
               ...styles.gearGuidesImage
             }}
           >
-            <text style={{ color: "white", alignSelf: "center" }}>
-              GEAR GUIDES
-            </text>
+            <text style={styles.categoryText}>GEAR GUIDES</text>
             <text style={{ color: "white", alignSelf: "center" }}>2019</text>
           </div>
         </Card>{" "}
@@ -82,7 +82,7 @@ const CategoriesImages = () => {
               ...styles.helmetsImage
             }}
           >
-            <text style={{ color: "white", alignSelf: "center" }}>Helmets</text>
+            <text style={styles.categoryText}>Helmets</text>
           </div>
         </Card>
         <Card className={classes.card} style={styles.categoryStyling}>
@@ -93,9 +93,7 @@ const CategoriesImages = () => {
               ...styles.ridingGearImage
             }}
           >
-            <text style={{ color: "white", alignSelf: "center" }}>
-              RIDING GEAR
-            </text>
+            <text style={styles.categoryText}>RIDING GEAR</text>
           </div>
         </Card>{" "}
         <Card className={classes.card} style={styles.categoryStyling}>
@@ -105,9 +103,7 @@ const CategoriesImages = () => {
               ...styles.airbagGearImage
             }}
           >
-            <text style={{ color: "white", alignSelf: "center" }}>
-              AIRBAG GEAR
-            </text>
+            <text style={styles.categoryText}>AIRBAG GEAR</text>
           </div>
         </Card>
         <Card className={classes.card} style={styles.categoryStyling}>
@@ -117,7 +113,7 @@ const CategoriesImages = () => {
               ...styles.partsImage
             }}
           >
-            <text style={{ color: "white", alignSelf: "center" }}>PARTS</text>
+            <text style={styles.categoryText}>PARTS</text>
           </div>
         </Card>{" "}
         <Card className={classes.card} style={styles.categoryStyling}>
@@ -144,10 +140,30 @@ const CategoriesImages = () => {
           <div
             style={{
               ...styles.divWithBackgroundImage,
-              ...styles.WomensImage
+              ...styles.womensImage
             }}
           >
             <text style={styles.categoryText}>WOMEN'S</text>
+          </div>
+        </Card>
+        <Card className={classes.card} style={styles.categoryStyling}>
+          <div
+            style={{
+              ...styles.divWithBackgroundImage,
+              ...styles.saleCloseImage
+            }}
+          >
+            <text style={styles.categoryText}>SALE & CLOSEOUTS</text>
+          </div>
+        </Card>
+        <Card className={classes.card} style={styles.categoryStyling}>
+          <div
+            style={{
+              ...styles.divWithBackgroundImage,
+              ...styles.videosImage
+            }}
+          >
+            <text style={styles.categoryText}>VIDEOS</text>
           </div>
         </Card>
       </div>
@@ -197,7 +213,7 @@ const styles = {
   ridingGearImage: {
     backgroundImage: `url(${CategoryRidingGear})`
   },
-  WomensImage: {
+  womensImage: {
     backgroundImage: `url(${CategoryWomens})`
   }
 };
