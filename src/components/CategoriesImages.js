@@ -6,9 +6,16 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import {
+  CategoryAccessories,
+  CategoryAirbagGear,
+  CategoryParts,
+  CategorySaleClose,
+  CategoryTires,
+  CategoryVideos,
   CategoryImageHelmets,
   CategoryGearGuides,
-  CategoryRidingGear
+  CategoryRidingGear,
+  CategoryWomens
 } from "../assets";
 
 const useStyles = makeStyles({
@@ -83,7 +90,7 @@ const CategoriesImages = () => {
           <div
             style={{
               ...styles.divWithBackgroundImage,
-              ...styles.gearGuidesImage
+              ...styles.ridingGearImage
             }}
           >
             <text style={{ color: "white", alignSelf: "center" }}>
@@ -95,7 +102,7 @@ const CategoriesImages = () => {
           <div
             style={{
               ...styles.divWithBackgroundImage,
-              ...styles.gearGuidesImage
+              ...styles.airbagGearImage
             }}
           >
             <text style={{ color: "white", alignSelf: "center" }}>
@@ -107,7 +114,7 @@ const CategoriesImages = () => {
           <div
             style={{
               ...styles.divWithBackgroundImage,
-              ...styles.gearGuidesImage
+              ...styles.partsImage
             }}
           >
             <text style={{ color: "white", alignSelf: "center" }}>PARTS</text>
@@ -129,7 +136,7 @@ const CategoriesImages = () => {
           <div
             style={{
               ...styles.divWithBackgroundImage,
-              ...styles.gearGuidesImage
+              ...styles.tiresImage
             }}
           >
             <text style={{ color: "white", alignSelf: "center" }}>TIRES</text>
@@ -139,7 +146,7 @@ const CategoriesImages = () => {
           <div
             style={{
               ...styles.divWithBackgroundImage,
-              ...styles.gearGuidesImage
+              ...styles.WomensImage
             }}
           >
             <text style={{ color: "white", alignSelf: "center" }}>WOMEN'S</text>
@@ -165,26 +172,29 @@ const styles = {
   helmetsImage: {
     backgroundImage: `url(${CategoryImageHelmets})`
   },
-  helmetsImage: {
-    backgroundImage: `url(${CategoryImageHelmets})`
+  accessoriesImage: {
+    backgroundImage: `url(${CategoryAccessories})`
   },
-  helmetsImage: {
-    backgroundImage: `url(${CategoryImageHelmets})`
+  airbagGearImage: {
+    backgroundImage: `url(${CategoryAirbagGear})`
   },
-  helmetsImage: {
-    backgroundImage: `url(${CategoryImageHelmets})`
+  partsImage: {
+    backgroundImage: `url(${CategoryParts})`
   },
-  helmetsImage: {
-    backgroundImage: `url(${CategoryImageHelmets})`
+  saleCloseImage: {
+    backgroundImage: `url(${CategorySaleClose})`
   },
-  helmetsImage: {
-    backgroundImage: `url(${CategoryImageHelmets})`
+  tiresImage: {
+    backgroundImage: `url(${CategoryTires})`
   },
-  helmetsImage: {
-    backgroundImage: `url(${CategoryImageHelmets})`
+  videosImage: {
+    backgroundImage: `url(${CategoryVideos})`
   },
-  helmetsImage: {
-    backgroundImage: `url(${CategoryImageHelmets})`
+  ridingGearImage: {
+    backgroundImage: `url(${CategoryRidingGear})`
+  },
+  WomensImage: {
+    backgroundImage: `url(${CategoryWomens})`
   }
 };
 

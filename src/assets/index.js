@@ -22,3 +22,4 @@ export { default as CategoryParts } from "./categoryImages/parts.jpg";
 export { default as CategorySaleClose } from "./categoryImages/sale&closeouts.jpg";
 export { default as CategoryTires } from "./categoryImages/tires.jpg";
 export { default as CategoryVideos } from "./categoryImages/videos.jpg";
+export { default as CategoryWomens } from "./categoryImages/womens.jpg";
