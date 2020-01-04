@@ -176,9 +176,7 @@ const PartSearch = () => {
             <div style={styles.garageRow}>
               <Settings style={{ alignSelf: "center" }} fontSize="small" />
               <p style={{ marginLeft: "1%" }}>Garage </p>
-              <p style={{ color: "orange", marginLeft: "1%" }}>
-                Log in to Access saved bikes
-              </p>
+              <p style={styles.orangeText}>Log in to Access saved bikes</p>
             </div>
           </div>
         </div>
@@ -271,7 +269,8 @@ const styles = {
     flexDirection: "row",
     display: "flex",
     alignContent: "center"
-  }
+  },
+  orangeText: { color: "orange", marginLeft: "1%" }
 };
 
 export default PartSearch;
