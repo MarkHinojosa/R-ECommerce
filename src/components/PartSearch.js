@@ -162,8 +162,19 @@ const PartSearch = () => {
               </FormControl>
               <Button variant="contained">GO!</Button>
             </div>
+            <div
+              style={{
+                marginLeft: "1%",
+                flexDirection: "row",
+                display: "flex"
+              }}
+            >
+              <p>Garage </p>
+              <p style={{ color: "orange", marginLeft: "1%" }}>
+                Log in to Access saved bikes
+              </p>
+            </div>
           </div>
-          <div>Garage Log in to Access saved bikes</div>
         </div>
       </div>
     </div>
@@ -175,14 +186,15 @@ const styles = {
     display: "flex",
     width: "100%",
     height: "100%",
-    justifyContent: "center"
+    justifyContent: "center",
+    marginTop: "1%"
   },
   partsSeachOutterContainer: {
     alignSelf: "center",
     backgroundColor: "white",
     width: "70%",
     // height: "40vh",
-    marginTop: "1%",
+    marginTop: "3%",
     border: 1,
     borderColor: "#d6d7da",
     borderTop: "orange",
@@ -224,12 +236,10 @@ const styles = {
   dropdownsContainer: {
     width: "100%",
     height: "100%",
-    backgroundColor: "red",
+    backgroundColor: "white",
     display: "flex",
     display: "flex",
-    alignItems: "center",
     justifyContent: "center",
-    alignItems: "center",
     justifyContent: "center",
     flexDirection: "column"
   },
