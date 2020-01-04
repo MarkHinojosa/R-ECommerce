@@ -173,14 +173,7 @@ const PartSearch = () => {
               </FormControl>
               <Button variant="contained">GO!</Button>
             </div>
-            <div
-              style={{
-                marginLeft: "1%",
-                flexDirection: "row",
-                display: "flex",
-                alignContent: "center"
-              }}
-            >
+            <div style={styles.garageRow}>
               <Settings style={{ alignSelf: "center" }} fontSize="small" />
               <p style={{ marginLeft: "1%" }}>Garage </p>
               <p style={{ color: "orange", marginLeft: "1%" }}>
@@ -272,6 +265,12 @@ const styles = {
     backgroundColor: "white",
     justifyContent: "space-around",
     alignItems: "center"
+  },
+  garageRow: {
+    marginLeft: "1%",
+    flexDirection: "row",
+    display: "flex",
+    alignContent: "center"
   }
 };
 
