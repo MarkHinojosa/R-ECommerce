@@ -3,6 +3,7 @@ import { Button, FormControl, InputLabel, Select } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import NativeSelect from "@material-ui/core/NativeSelect";
+import { Settings } from "@material-ui/icons";
 
 const useStyles = makeStyles(theme => ({
   formControl: {
@@ -48,10 +49,20 @@ const PartSearch = () => {
         </h1>
         <div style={styles.partsSearchInnerContainer}>
           <div style={styles.partsSelectionRow}>
-            <div style={styles.selectionBoxsContainer}>
+            <div
+              style={{
+                ...styles.selectionBoxsContainer,
+                ...styles.backgroundColorWhite
+              }}
+            >
               <div>Aftermarket Parts</div>
             </div>
-            <div style={styles.selectionBoxsContainer}>
+            <div
+              style={{
+                ...styles.selectionBoxsContainer,
+                ...styles.backgroundColorGray
+              }}
+            >
               <div>OEM Parts</div>
             </div>
           </div>
@@ -166,10 +177,12 @@ const PartSearch = () => {
               style={{
                 marginLeft: "1%",
                 flexDirection: "row",
-                display: "flex"
+                display: "flex",
+                alignContent: "center"
               }}
             >
-              <p>Garage </p>
+              <Settings style={{ alignSelf: "center" }} fontSize="small" />
+              <p style={{ marginLeft: "1%" }}>Garage </p>
               <p style={{ color: "orange", marginLeft: "1%" }}>
                 Log in to Access saved bikes
               </p>
@@ -224,14 +237,22 @@ const styles = {
     width: "25%",
     alignContent: "center",
     textAlign: "center",
-    backgroundColor: "white",
     borderColor: "gray",
-    borderTopColor: "orange",
     borderStyle: "solid",
-    borderWidth: 1,
+    borderTop: "10",
+    borderBottom: "none",
+    borderLeft: "none",
+    borderRight: "none",
     justifyContent: "center",
     alignItems: "center",
     display: "flex"
+  },
+  backgroundColorWhite: {
+    borderTopColor: "orange",
+    backgroundColor: "white"
+  },
+  backgroundColorGray: {
+    backgroundColor: "#E3E2E2"
   },
   dropdownsContainer: {
     width: "100%",
