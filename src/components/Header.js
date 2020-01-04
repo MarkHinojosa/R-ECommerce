@@ -30,24 +30,8 @@ const Header = () => {
             <img alt="Logo" style={styles.mainLogo} src={Logo} />
           </Grid>
         </Grid>
-        <div
-          style={{
-            width: "100%",
-            height: "20%",
-            justifyContent: "center",
-            textAlign: "center",
-            alignSelf: "center"
-          }}
-        >
-          <p
-            style={{
-              color: "white",
-              fontWeight: "bold",
-              fontSize: "12"
-            }}
-          >
-            Speak To An Expert: 1-555-555{" "}
-          </p>
+        <div style={styles.contactPhTextContainer}>
+          <p style={styles.contactPhText}>Speak To An Expert: 1-555-555 </p>
         </div>
       </Grid>{" "}
       <Grid item xs={5}>
@@ -57,21 +41,11 @@ const Header = () => {
             flexDirection: "column"
           }}
         >
-          <div
-            style={{
-              // padding: "10px",
-              fontSize: "12px",
-              width: "50%",
-              display: "flex",
-              padding: "5%",
-              flexDirection: "row",
-              justifyContent: "space-evenly"
-            }}
-          >
+          <div style={styles.topMiddleRow}>
             {" "}
-            <text style={{ color: "white" }}>Customer Service</text>
-            <text style={{ color: "white" }}>Order Status</text>
-            <text style={{ color: "white" }}>Rent A Bike</text>
+            <text style={styles.whiteText}>Customer Service</text>
+            <text style={styles.whiteText}>Order Status</text>
+            <text style={styles.whiteText}>Rent A Bike</text>
           </div>
           <form noValidate autoComplete="off">
             <TextField
@@ -161,6 +135,30 @@ const styles = {
   mainLogo: {
     width: "100%",
     height: "100%",
+    alignSelf: "center"
+  },
+  contactPhText: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: "12"
+  },
+  topMiddleRow: {
+    // padding: "10px",
+    fontSize: "12px",
+    width: "50%",
+    display: "flex",
+    padding: "5%",
+    flexDirection: "row",
+    justifyContent: "space-evenly"
+  },
+  whiteText: {
+    color: "white"
+  },
+  contactPhTextContainer: {
+    width: "100%",
+    height: "20%",
+    justifyContent: "center",
+    textAlign: "center",
     alignSelf: "center"
   }
 };
