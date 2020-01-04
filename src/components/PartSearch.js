@@ -1,8 +1,6 @@
 import React from "react";
 import { Button, FormControl, InputLabel, Select } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import FormHelperText from "@material-ui/core/FormHelperText";
-import NativeSelect from "@material-ui/core/NativeSelect";
 import { Settings } from "@material-ui/icons";
 
 const useStyles = makeStyles(theme => ({
