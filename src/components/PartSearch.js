@@ -257,7 +257,6 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     width: "100%",
-    // height: "100%",
     backgroundColor: "white",
     justifyContent: "space-around",
     alignItems: "center"

@@ -143,7 +143,6 @@ const styles = {
     fontSize: "12"
   },
   topMiddleRow: {
-    // padding: "10px",
     fontSize: "12px",
     width: "50%",
     display: "flex",

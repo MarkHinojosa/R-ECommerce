@@ -20,7 +20,6 @@ const Featured = () => {
               objectFit: "contain",
               height: "100%",
               width: "100%",
-
               alignSelf: "center"
             }}
           />{" "}
@@ -47,7 +46,6 @@ const Featured = () => {
               objectFit: "contain",
               height: "100%",
               width: "100%",
-
               alignSelf: "center"
             }}
             src={HelmetFeatured}
@@ -59,7 +57,6 @@ const Featured = () => {
               objectFit: "contain",
               height: "100%",
               width: "100%",
-
               alignSelf: "center"
             }}
             src={StockingStuffers}
