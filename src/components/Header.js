@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { TextField, Grid } from "@material-ui/core";
 import {
   Logo,
@@ -9,7 +9,7 @@ import {
 
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 // import styles from "../styles/style.module.css";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const cart = useSelector(state => state.cart);
@@ -130,14 +130,15 @@ const styles = {
     color: "white"
   },
   mainLogo: {
-    width: "248px",
-    height: "60px",
+    width: "290px",
+    height: "70px",
     alignSelf: "center"
   },
   contactPhText: {
     color: "white",
     fontWeight: "bold",
-    fontSize: "12"
+    fontSize: "12",
+    margin: 0
   },
   topMiddleRow: {
     fontSize: "12px",
@@ -152,7 +153,7 @@ const styles = {
   },
   contactPhTextContainer: {
     width: "100%",
-    height: "20%",
+    height: "100%",
     justifyContent: "center",
     textAlign: "center",
     alignSelf: "center"

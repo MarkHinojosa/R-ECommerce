@@ -1,4 +1,3 @@
-import { Grid, Button } from "@material-ui/core";
 import {
   FeaturedDeal,
   HelmetFeatured,
@@ -15,6 +14,7 @@ const Featured = () => {
       <div style={styles.dealsRow}>
         <div style={{ width: "100%", display: "flex", paddingRight: "1%" }}>
           <img
+            alt="featuredDeal"
             src={FeaturedDeal}
             style={{
               objectFit: "contain",
@@ -27,6 +27,7 @@ const Featured = () => {
         <div style={{ width: "100%", display: "flex", paddingLeft: "1%" }}>
           {" "}
           <img
+            alt="weeklyDealsFeatured"
             src={WeekleyDealsFeatured}
             style={{
               objectFit: "contain",
