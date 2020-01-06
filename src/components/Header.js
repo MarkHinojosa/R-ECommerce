@@ -20,16 +20,13 @@ const Header = () => {
         style={{
           height: "100%",
           display: "flex",
-          flexDirection: "column"
+          flexDirection: "column",
+          padding: "1%"
         }}
         item
         xs={3}
       >
-        <Grid container spacing={12}>
-          <Grid item xs={12}>
-            <img alt="Logo" style={styles.mainLogo} src={Logo} />
-          </Grid>
-        </Grid>
+        <img alt="Logo" style={styles.mainLogo} src={Logo} />
         <div style={styles.contactPhTextContainer}>
           <p style={styles.contactPhText}>Speak To An Expert: 1-555-555 </p>
         </div>
@@ -90,15 +87,15 @@ const Header = () => {
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
-            flexWrap: "no-wrap"
+            flexDirection: "row"
+            // flexWrap: "no-wrap"
           }}
         >
           <div style={{ display: "flex", justifyContent: "center" }}>
             <img
               alt="freeShippingLogo"
               className="mogo"
-              style={{ width: "60%" }}
+              style={{ width: "60%", height: "100%" }}
               src={FreeShippingLogo}
             />
           </div>
@@ -106,7 +103,7 @@ const Header = () => {
             {" "}
             <img
               alt="returnLogo"
-              style={{ width: "60%" }}
+              style={{ width: "60%", height: "100%" }}
               className="mogo"
               src={ReturnLogo}
             />
@@ -114,7 +111,7 @@ const Header = () => {
           <div style={{ display: "flex", justifyContent: "center" }}>
             <img
               alt="priceMatchLogo"
-              style={{ width: "60%" }}
+              style={{ width: "60%", height: "100%" }}
               src={PriceMatchLogo}
             />
           </div>
@@ -133,8 +130,8 @@ const styles = {
     color: "white"
   },
   mainLogo: {
-    width: "100%",
-    height: "100%",
+    width: "248px",
+    height: "60px",
     alignSelf: "center"
   },
   contactPhText: {
@@ -146,7 +143,7 @@ const styles = {
     fontSize: "12px",
     width: "50%",
     display: "flex",
-    padding: "5%",
+    padding: "3%",
     flexDirection: "row",
     justifyContent: "space-evenly"
   },
