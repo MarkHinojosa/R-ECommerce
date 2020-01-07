@@ -5,7 +5,8 @@ import {
   Carousel,
   Featured,
   PartSearch,
-  CategoriesImages
+  CategoriesImages,
+  BrandsCarousel
 } from "../components";
 import { Grid } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
@@ -34,6 +35,9 @@ const MainScreen = () => {
       </div>
       <div style={{ width: "100%", display: "flex" }}>
         <CategoriesImages />
+      </div>
+      <div style={{ width: "100%", display: "flex" }}>
+        <BrandsCarousel />
       </div>
     </div>
   );
